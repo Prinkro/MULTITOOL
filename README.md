@@ -1,2 +1,2 @@
 # MULTITOOL
-This is a discord multitool that you can use to troll your friends. some scripts include Info puller and Remote
+INPORTANT inorder to use you must copy all of the code and then paste it into notepad the save as a batch script
