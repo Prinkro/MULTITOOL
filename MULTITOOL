@@ -1,0 +1,236 @@
+@echo off
+title Multitool-by Prink
+chcp 65001 >nul
+:Start
+cls
+call :banner
+
+cls
+goto Start
+:banner
+color 09
+echo.
+echo.
+echo                        ███    ███ ██    ██ ██      ████████ ██ ████████  ██████   ██████  ██      
+echo                        ████  ████ ██    ██ ██         ██    ██    ██    ██    ██ ██    ██ ██      
+echo                        ██ ████ ██ ██    ██ ██         ██    ██    ██    ██    ██ ██    ██ ██      
+echo                        ██  ██  ██ ██    ██ ██         ██    ██    ██    ██    ██ ██    ██ ██      
+echo                        ██      ██  ██████  ███████    ██    ██    ██     ██████   ██████  ███████
+
+echo ╔1) Doxx menu
+echo ║
+echo ║
+echo ║
+echo ╚2)System Remote
+set /p input=... %BS%
+if /i %input% EQU 1 call :Doxx menu
+if /i %input% EQU 2 call :remote
+if /i %input% EQU 7 call :1010
+
+:Doxx menu
+cls
+:z
+color 02
+echo ███████╗███████╗███████╗   ██╗███╗   ██╗███████╗ ██████╗     ██████╗ ██╗   ██╗██╗     ██╗     ███████╗██████╗ 
+echo ╚════██║╚════██║╚════██║   ██║████╗  ██║██╔════╝██╔═══██╗    ██╔══██╗██║   ██║██║     ██║     ██╔════╝██╔══██╗
+echo    ██╔╝    ██╔╝    ██╔╝    ██║██╔██╗ ██║█████╗  ██║   ██║    ██████╔╝██║   ██║██║     ██║     █████╗  ██████╔╝
+echo   ██╔╝    ██╔╝    ██╔╝     ██║██║╚██╗██║██╔══╝  ██║   ██║    ██╔═══╝ ██║   ██║██║     ██║     ██╔══╝  ██╔══██╗
+echo   ██║     ██║     ██║      ██║██║ ╚████║██║     ╚██████╔╝    ██║     ╚██████╔╝███████╗███████╗███████╗██║  ██║
+echo   ╚═╝     ╚═╝     ╚═╝      ╚═╝╚═╝  ╚═══╝╚═╝      ╚═════╝     ╚═╝      ╚═════╝ ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+
+echo Enter 1 for IP Pullerr:
+
+echo Enter 2 for Password Puller:
+
+echo Enter 3 for Address Pullerr:
+
+echo Enter Exit to go to multitool
+echo  ---------------------------------
+set /p ans="Enter program Number:"
+if %ans%==Exit (
+goto Start
+)
+if %ans%==1 (
+goto a
+)
+if %ans%==2 (
+goto b
+)
+if %ans%==3 (
+goto c
+)
+if %ans%==4 (
+goto d
+)
+
+
+:a
+cls
+echo You have enterd Discord Ip puller
+set /p User="Enter Username: "
+
+cls
+ echo user found
+ echo IP: 135.164.50.34
+)
+pause
+cls
+goto z
+
+:b
+cls
+set /p User="Enter key: "
+if %ans%==9562 (
+goto b1
+)
+
+:b1
+cls
+echo You have enterd Discord Password puller
+set /p User="Enter Username: "
+cls
+ echo user found
+ echo password is 123xX2011leoXx321
+pause
+cls
+goto z
+
+
+:c
+cls
+echo You have enterd Discord Address puller
+set /p User="Enter Username: "
+
+cls
+ echo user found
+ echo Address 814 Beeghley Street Oenaville TX zip 1 85289
+)
+pause
+cls
+goto z
+
+:remote
+cls
+echo ██████╗ ███████╗███╗   ███╗ ██████╗ ████████╗███████╗
+echo ██╔══██╗██╔════╝████╗ ████║██╔═══██╗╚══██╔══╝██╔════╝
+echo ██████╔╝█████╗  ██╔████╔██║██║   ██║   ██║   █████╗  
+echo ██╔══██╗██╔══╝  ██║╚██╔╝██║██║   ██║   ██║   ██╔══╝  
+echo ██║  ██║███████╗██║ ╚═╝ ██║╚██████╔╝   ██║   ███████╗
+echo ╚═╝  ╚═╝╚══════╝╚═╝     ╚═╝ ╚═════╝    ╚═╝   ╚══════╝
+
+
+set /p ans="Enter IP: "
+cls
+echo press 1 for system shut down
+echo press 2 for app shut down
+echo press 3 for app start up
+echo press 4 for pop up message
+set /p ans="What would you like to do: "
+if %ans%==Exit (
+goto Start
+)
+if %ans%==1 (
+call :sys.shut
+)
+if %ans%==2 (
+goto ap.shut
+)
+if %ans%==3 (
+goto appstart
+)
+if %ans%==4 (
+call :popupms
+)  
+
+:sys.shut
+cls
+echo type yes to continue type no to stop
+set /p ans="Would you like to continue--->"
+if %ans%==yes (
+call :Shutdown
+)
+if %ans%==no (
+call :remote
+)
+:Shutdown
+cls
+echo shuting down computer.
+pause
+cls
+echo shuting down computer..
+pause
+cls
+echo shuting down computer... 
+pause
+cls
+echo shut down complete
+call :remote   
+
+:popupms
+cls
+set /p ans="What do you want the pop up to say--->"
+cls
+echo sending.
+pause
+cls 
+echo sending..
+pause
+cls
+echo sending...
+pause
+cls
+echo pop up sent
+call :remote 
+
+:ap.shut
+cls
+echo please enter in a applecation to continue
+echo current apps running are Google Chrome, Fortnite, FN-Cheats.exe and OBS Studio
+set /p ans="What app would you like to shut down--->"
+cls
+echo type yes to continue type no to stop
+set /p ans="Would you like to continue--->"
+if %ans%==yes (
+call :Shutdownapp
+)
+if %ans%==no (
+call :remote
+
+:appstart
+cls
+set /p ans="What app do you want to start up--->"
+cls
+echo starting applecation.
+pause
+cls 
+echo starting applstarting ..
+pause
+cls
+echo starting applecation...
+pause
+cls
+echo app running
+pause
+call :remote 
+
+:Shutdownapp
+cls
+echo shuting down app.
+pause
+cls
+echo shuting down app..
+pause
+cls
+echo shuting down app...
+pause
+cls
+echo app shut down complete
+pause
+call :remote 
+
+:1010
+cls
+:exe
+color 02
+echo %random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%%random%
+goto exe
